@@ -1,10 +1,3 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-
-@font-face {
-    font-family: 'HeroesAssemble';
-    src: url('../styles/fonts/heroesassemble2.ttf') format('ttf');
-}
-
 * {
     box-sizing: border-box;
     overflow-x: hidden;
@@ -16,124 +9,45 @@
     height: auto;
 }
 
-.main .header {
-    width: 100%;
-    height: 937px;
-    /* background-color: black; */
-    background-image: url(../Images/MainBackground.png);
-    background-size: 100% 100%;
-    background-color: #fff;
-}
-
-.main .header .nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.main .header .nav .logo {
-    margin: 20px 46.07px;
-    /* position: absolute; */
-}
-
-.main .header .nav .logo span {
-    color: #fff;
-    font-family: 'HeroesAssemble';
-    font-size: 71px;
-    font-weight: bold;
-    letter-spacing: -2px;
-}
-
-.main .header .nav .menu {
-    margin: 20px 35px;
-    width: 256px;
-    height: 53px;
-    /* float: right; */
-    overflow: hidden;
-}
-
-.main .header .nav .menu ul {
-    padding: 0;
-    display: flex;
-}
-
-.main .header .nav .menu ul li {
-    margin: 0 10px;
-}
-
-.main .header .nav .menu ul > li:last-child {
-    padding: 0 15px;
-    border-radius: 5px;
-    background-color: black;
-}
-
-.main .header .nav .menu ul li span {
-    width: auto;
-    color: #fff;
-    font-family: 'Spoqa Han Sans', 'Sans-serif';
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.main .header .slogan {
+.main .slogan {
     margin: 0 30px;
-    width: 100%;
+    height: 500px;
     display: flex;
     justify-content: space-between;
 }
 
-.main .header .slogan .text {
-    margin: 250px auto;
-    width: 600px;
+.main .slogan .text {
+    margin: auto;
+    position: relative;
     color: #fff;
     font-size: 2.5vw;
     font-weight: bold;
+    /* text-align: center; */
+    letter-spacing: -4px;
 }
 
-.main .header .slogan .image {
+.main .slogan .image {
     margin: 0 auto;
-    width: 900px;
-    position: relative;
+    width: 850px;
+    /* height: auto; */
     display: flex;
-    overflow: hidden;
 }
 
-.main .header .slogan .image .first {
-    top: 200px;
-    /* left: -100px; */
+.main .slogan .image .f {
+    top: 150px;
+    right: -100px;
     width: 400px;
     height: 350px;
-    background-image: url('../Images/MainImage2.png');
+    background-image: url("../Images/MainImage1.png");
     background-size: 100% 100%;
     position: relative;
     z-index: 1;
 }
 
-.main .header .slogan .image .second {
-    /* top: 80px; */
-    left: -100px;
-    width: 500px;
-    height: 450px;
-    background-image: url('../Images/MainImage1.png');
+.main .slogan .image .s {
+    width: 450px;
+    height: 400px;
+    background-image: url("../Images/MainImage2.png");
     background-size: 100% 100%;
     position: relative;
-}
-
-.main .footer {
-    padding: 20px 100px;
-    width: 100%;
-    background-color: #f8f8f8;
-}
-
-.main .footer .info {
-    width: 100%;
-    display: flex;
-}
-
-.main .footer .info .call, .main .footer .info .address {
-    padding: 10px 0;
-    width: 500px;
-    display: inline-block;
-    color: gray;
 }
