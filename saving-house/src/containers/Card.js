@@ -2,7 +2,7 @@ import React from 'react';
 import './Card.css';
 
 const Card = ({ children, className }) => (
-    <div className={className + " " + "card"}>
+    <div className={className + " card"}>
         {children}
     </div>
 );
