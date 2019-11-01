@@ -49,6 +49,7 @@
 .header .nav .menu ul li * {
     width: auto;
     color: #fff;
+    cursor: pointer;
     font-family: 'Spoqa Han Sans', 'Sans-serif';
     font-size: 20px;
     font-weight: bold;
