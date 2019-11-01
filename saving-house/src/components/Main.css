@@ -1,6 +1,8 @@
 * {
     /* box-sizing: border-box; */
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .main {
@@ -14,7 +16,7 @@
 
 .main .slogan {
     margin: 0 30px;
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
 }
@@ -23,7 +25,7 @@
     margin: auto;
     position: relative;
     color: #fff;
-    font-size: 2.5vw;
+    font-size: 4vw;
     font-weight: bold;
     /* text-align: center; */
     letter-spacing: -4px;
