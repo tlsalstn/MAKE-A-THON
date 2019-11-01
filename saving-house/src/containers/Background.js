@@ -8,6 +8,10 @@ const handleLogo = () => {
     window.location.href = "/";
 }
 
+const map = () => {
+    window.location.href = "http://172.16.10.9:3002/map";
+}
+
 class Background extends Component {
     render() {
         const { children } = this.props;
@@ -19,7 +23,7 @@ class Background extends Component {
                         <div className="menu">
                             <ul>
                                 <li><Link to="/reportList">신고리스트</Link></li>
-                                <li><Link to="/">위치</Link></li>
+                                <li><div onClick={map}>위치</div></li>
                                 <li><Link to="/login">로그인</Link></li>
                             </ul>
                         </div>
