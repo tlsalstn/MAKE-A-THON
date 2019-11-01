@@ -38,12 +38,24 @@ module.exports = (sequelize, DataTypes) => {
 
         Report.Create = (data) => Report.create(data);
         Report.getAllData = () => Report.findAll({
-            include: [db.Image]
+            include: [db.Image],
+            order: [["createdAt", "desc"]]
         });
+
+        Report.getData = () => sequelize.query(`
+            select date_format(createdAt,'%Y-%m-%d %T') as createdAt, content from reports;
+            `, {
+                type: sequelize.QueryTypes.SELECT,
+                raw: true,
+        })
         Report.change = (id, state) => Report.update(
             { rescueState: state },
             { where: {id: id} }, 
         );
+        Report.getDetailData = (id) => Report.findOne({
+            where: { id: id },
+            include: [db.Image],
+        })
     }
 
     return Report;

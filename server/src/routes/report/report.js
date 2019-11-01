@@ -23,5 +23,7 @@ const upload = multer({
 router.get('/', auth, Ctrl.AllData);
 router.post('/', auth, upload.single('image'), Ctrl.Report);
 router.patch('/changeState/:id', auth, Ctrl.State);
+router.get('/reportInfo/:id', auth, Ctrl.detail);
+router.get('/data', Ctrl.data);
 
 module.exports = router;
