@@ -20,8 +20,26 @@ export default class Report {
                     "token": `${token}`,
                 },
             });
-            console.log(result);
-            this.setReport(result.data);
+            this.setReport(result.data.data);
+        }catch(error) {
+            console.log(error);
+        }
+    }
+
+    @action async changeState(id) {
+        try{
+            let result = await axios({
+                url: "http://172.16.10.9:3002/api/report/changeState/" + id,
+                method: "PATCH",
+                headers: {
+                    "Access-Control-Allow-Origin": true,
+                    "token": `${token}`,
+                },
+                data: {
+                    "rescueState": 1,
+                }
+            })
+            this.getReport();
         }catch(error) {
             console.log(error);
         }

@@ -1,0 +1,42 @@
+.dispatchBtn {
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+.dispatchBtn .enable {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    background-color: #FE4E4E;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+}
+
+.dispatchBtn .enable:hover {
+    background-color: #EC2525;
+}
+
+.dispatchBtn .disable {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+}
+
+.dispatchBtn .disable {
+    cursor: not-allowed;
+}

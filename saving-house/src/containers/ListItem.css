@@ -4,38 +4,59 @@
     height: 60px;
     border-bottom: 1px solid #707070;
     display: flex;
-    line-height: 60px;
     overflow: hidden;
 }
 
 .item .container {
     width: 100%;
+    height: 100%;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
     overflow: hidden;
+    line-height: 58px;
 }
 
-.item .container * {
+.item .container:hover {
+    background-color: #f8f8f8;
+}
+
+.item .container > p {
+    margin: auto 0;
     padding: 0 20px;
     box-sizing: content-box;
     overflow: hidden;
+    float: left;
 }
 
 .item .container .id {
-    width: 80px;
+    width: 25px;
+    text-align: center;
 }
 
 .item .container .userId {
-    width: 500px;
+    width: 30px;
 }
 
 .item .container .content {
-    width: 800px;
-    max-width: 500px!important;
+    max-width: 500px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .item .container .time {
+    width: 80px;
     float: right;
+    text-align: center;
 }
 
-.item .content .status {
+.item .container .time span{
+    float: none;
+}
+
+.item .container .status {
+    width: 120px;
+    height: 100%;
     float: right;
+    overflow: hidden;
 }

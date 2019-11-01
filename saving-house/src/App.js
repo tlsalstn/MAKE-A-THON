@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Main from './components/Main';
 import Login from './components/Login';
-import ReportList from './containers/List';
+import ReportList from './components/ReportList';
 import FindMap from './containers/Map';
 
 class App extends Component {
