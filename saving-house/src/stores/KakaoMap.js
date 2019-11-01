@@ -1,9 +1,9 @@
 import { observable, action, configure } from 'mobx';
 import axios from 'axios';
 
-configure({enforceActions: true});
+configure({enforceActions: "observed"});
 
-class KakaoMap {
+export default class KakaoMap {
     @observable data=[];
 
     @action setData = (data) => {this.data = [...data];}
@@ -17,5 +17,5 @@ class KakaoMap {
             }
         });
         this.setData(result);
-    }
-}
+    };
+};
