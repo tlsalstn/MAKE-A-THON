@@ -10,6 +10,17 @@
     height: 500px;
 }
 
+.reportInfo .info {
+    margin: 0 auto;
+    width: 500px;
+    min-height: 500px;
+    box-sizing: border-box;
+}
+
+.reportInfo .info p {
+
+}
+
 .reportInfo .info .userId {
     font-size: 20px;
     font-weight: bold;
