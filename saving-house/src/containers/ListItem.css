@@ -9,6 +9,12 @@
 
 .item .container {
     width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.item .container .info {
+    width: 100%;
     height: 100%;
     background-color: inherit;
     cursor: pointer;
@@ -17,11 +23,11 @@
     line-height: 58px;
 }
 
-.item .container:hover {
+.item .container .info:hover {
     background-color: #f8f8f8;
 }
 
-.item .container > p {
+.item .container .info > p {
     margin: auto 0;
     padding: 0 20px;
     box-sizing: content-box;
@@ -29,28 +35,28 @@
     float: left;
 }
 
-.item .container .id {
+.item .container .info .id {
     width: 25px;
     text-align: center;
 }
 
-.item .container .userId {
+.item .container .info .userId {
     width: 30px;
 }
 
-.item .container .content {
+.item .container .info .content {
     max-width: 500px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-.item .container .time {
-    width: 80px;
+.item .container .info .time {
+    width: 160px;
     float: right;
     text-align: center;
 }
 
-.item .container .time span{
+.item .container .info .time span{
     float: none;
 }
 
@@ -59,4 +65,5 @@
     height: 100%;
     float: right;
     overflow: hidden;
+    z-index: 1;
 }
