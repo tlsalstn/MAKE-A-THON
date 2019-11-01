@@ -2,3 +2,44 @@
     text-decoration: none;
     color: black;
 }
+
+.report .menu {
+    margin: 0 auto 10px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.report .menu p {
+    margin: auto 0;
+    padding: 0 20px;
+    box-sizing: content-box;
+    overflow: hidden;
+    float: left;
+}
+
+.report .menu .f .id {
+    width: 25px;
+    text-align: center;
+}
+
+.report .menu .f .userId {
+    width: 30px;
+}
+
+.report .menu .f .content {
+    max-width: 500px;
+}
+
+.report .menu .s .time {
+    width: 160px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.report .menu .s .status{
+    width: 120px;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
