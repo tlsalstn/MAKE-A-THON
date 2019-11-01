@@ -9,10 +9,6 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(1000),
             allowNull: false
         },
-        category: {
-            type: DataTypes.STRING(45),
-            allowNull: false
-        },
         createdAt: {
             type: DataTypes.DATE,
             allowNull: false,

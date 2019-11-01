@@ -18,10 +18,10 @@ exports.AllData = async(req, res) => {
 
 exports.Report = async(req, res) => {
     try {
-        const { content, category } = req.body;
+        const { content } = req.body;
         const UserId = req.user.id;
 
-        let data = { content, category, UserId };
+        let data = { content, UserId };
         const report = await db.Report.Create(data);
 
         const { path } = req.file;

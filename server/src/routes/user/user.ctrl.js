@@ -12,6 +12,7 @@ exports.signIn = async (req, res) => {
         const user = await db.User.Create(data);
 
         return res.status(200).send({
+            message: "sucess",
             status: 200,
             user: user,
         });
@@ -37,7 +38,7 @@ exports.signUp = async (req, res) => {
             return res.status(200).send({
                 "message": "success",
                 "data": {
-                    "token": { token/*, refreshToken*/ },
+                    token: token/*, refreshToken*/,
                     "user": user,
                 }
             });
