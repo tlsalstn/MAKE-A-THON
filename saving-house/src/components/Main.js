@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { observer, inject } from 'mobx-react';
 import Background from '../containers/Background';
 import Footer from '../containers/Footer';
 import './Main.css';
