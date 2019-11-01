@@ -18,9 +18,20 @@ class List extends Component {
         return (
             <div>
                 <Card className="report">
+                    <div className="menu">
+                        <div className="f">
+                            <p className="id">No</p>
+                            <p className="userId">ID</p>
+                            <p className="content">Content</p>
+                        </div>
+                        <div className="s">
+                            <p className="time">Time</p>
+                            <p className="status">Status</p>
+                        </div>
+                    </div>
                     {reportList.map(item => {
                         return (
-                            <ListItem id={item.id} userId={item.UserId} content={item.content} status={item.rescueState} time={item.createdAt}/>
+                            <ListItem id={item.id} userId={item.UserId} content={item.content} status={item.rescueState} time={item.createdAt} />
                         )
                     })}
                 </Card>
