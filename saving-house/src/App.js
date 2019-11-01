@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Main from './components/Main';
 import Login from './components/Login';
+import ReportList from './containers/List';
 import FindMap from './containers/Map';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       <>
         <Route exact path="/" component={Main}/>
         <Route path="/login" component={Login}/>
+        <Route path="/reportList" component={ReportList}/>
         <Route path="/map" component={FindMap}/>
       </>
     );

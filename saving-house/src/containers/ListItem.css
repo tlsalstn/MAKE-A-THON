@@ -1,0 +1,41 @@
+.item {
+    margin: 0 auto;
+    width: 1000px;
+    height: 60px;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.item .container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.item .container * {
+    padding: 0 20px;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.item .container .id {
+    width: 80px;
+}
+
+.item .container .userId {
+    width: 500px;
+}
+
+.item .container .content {
+    width: 800px;
+    max-width: 500px!important;
+}
+
+.item .container .time {
+    float: right;
+}
+
+.item .content .status {
+    float: right;
+}
