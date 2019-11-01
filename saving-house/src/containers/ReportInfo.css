@@ -1,0 +1,16 @@
+.reportInfo {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+}
+
+.reportInfo .img {
+    margin: 5px;
+    width: 500px;
+    height: 500px;
+}
+
+.reportInfo .info .userId {
+    font-size: 20px;
+    font-weight: bold;
+}
