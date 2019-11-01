@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.main .slogan {
+    margin: 0 30px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .slogan .text {
+    margin: auto;
+    position: relative;
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: bold;
+    /* text-align: center; */
+    letter-spacing: -4px;
+}
+
+.main .slogan .image {
+    margin: 0 auto;
+    width: 850px;
+    /* height: auto; */
+    display: flex;
+}
+
+.main .slogan .image .f {
+    top: 150px;
+    right: -100px;
+    width: 400px;
+    height: 350px;
+    background-image: url("../Images/MainImage1.png");
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.main .slogan .image .s {
+    width: 450px;
+    height: 400px;
+    background-image: url("../Images/MainImage2.png");
+    background-size: 100% 100%;
+    position: relative;
+}

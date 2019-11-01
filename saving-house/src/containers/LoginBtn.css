@@ -1,0 +1,17 @@
+.loginBtn {
+    width: 500px;
+}
+
+.loginBtn .btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: inherit;
+    color: black;
+}
+
+.loginBtn .btn:hover {
+    background-color: black;
+    color: #fff;
+}
