@@ -18,10 +18,17 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+app.set('view engine', 'ejs');
+app.set('views', './src/views');
 
 app.use('/api/user', userRouter);
 app.use('/api/report', reportRouter);
 app.use('/api/rescue', rescueRouter);
+
+app.get('/map', (req, res) => {
+    res.render('map');
+})
+
 
 app.listen(port, () => {
     console.log(`서버 구동 ${port}`);

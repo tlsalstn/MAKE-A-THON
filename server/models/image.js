@@ -24,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
         })
 
         Image.Create = (data) => Image.create(data);
+        Image.getAll = () => Image.findAll();
     }
 
     return Image;
