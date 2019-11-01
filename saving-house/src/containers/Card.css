@@ -4,3 +4,15 @@
     /* display: inline-block; */
     background-color: #fff;
 }
+
+.report {
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.info {
+    margin: 0 auto;
+    width: 500px;
+    min-height: 500px;
+    box-sizing: border-box;
+}

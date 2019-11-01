@@ -18,7 +18,7 @@ class Background extends Component {
                         <div className="logo" onClick={handleLogo}/>
                         <div className="menu">
                             <ul>
-                                <li><Link to="/">신고위치</Link></li>
+                                <li><Link to="/reportList">신고리스트</Link></li>
                                 <li><Link to="/">위치</Link></li>
                                 <li><Link to="/login">로그인</Link></li>
                             </ul>

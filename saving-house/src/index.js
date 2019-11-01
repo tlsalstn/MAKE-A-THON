@@ -8,15 +8,15 @@ import { Provider } from 'mobx-react';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
 
-import emap from './stores/KakaoMap';
+import Report from './stores/Report';
 // import Main from './components/Main';
 // import Login from './components/Login';
 // import FindMap from './containers/Map';
 
-const aou = new emap();
+const report = new Report();
 
 ReactDOM.render(
-    <Provider store={aou}>
+    <Provider report={report}>
         <BrowserRouter>
             <App/>
         </BrowserRouter>

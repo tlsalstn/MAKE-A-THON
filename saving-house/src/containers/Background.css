@@ -1,13 +1,15 @@
 .header {
     top: -7px;
     width: 100%;
-    height: 937px;
+    height: 960px;
     /* background-color: black; */
-    background-color: #fff;
+    background-color:#F5F5F5;
     background-image: url(../Images/MainBackground.png);
     background-size: calc(100% + 30px) 100%;
     background-position: center;
     position: relative;
+    /* overflow: hidden; */
+    /* overflow-y: auto; */
 }
 
 .header .nav {
@@ -29,7 +31,7 @@
 
 .header .nav .menu {
     margin: 20px 35px;
-    width: 270px;
+    width: 290px;
     height: 53px;
     /* float: right; */
     overflow: hidden;
