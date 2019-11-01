@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "date-utils": "^1.2.21",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
@@ -21,6 +23,8 @@
     "nodemon": "^1.19.4",
     "request": "^2.88.0",
     "sequelize": "^5.21.2",
-    "sequelize-cli": "^5.5.1"
+    "sequelize-cli": "^5.5.1",
+    "swagger-jsdoc": "^3.4.0",
+    "swagger-ui-express": "^4.1.2"
   }
 }

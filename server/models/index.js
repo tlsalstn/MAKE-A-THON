@@ -25,6 +25,11 @@ fs
     db[model.name] = model;
   });
 
+db.User = require('./user')(sequelize, Sequelize);
+db.Report = require('./report')(sequelize, Sequelize);
+db.Image = require('./image')(sequelize, Sequelize);
+db.Time = require('./time')(sequelize, Sequelize);
+
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);
