@@ -5,7 +5,7 @@ import './ListItem.css';
 import { inject, observer } from 'mobx-react';
 
 const move = (id) => {
-    
+    window.location.href = "/info/" + id;
 }
 
 @inject("report")
@@ -14,15 +14,17 @@ class ListItem extends Component {
     render() {
         const { id, userId, content, status, time } = this.props;
         return (
-            <div className="item" onClick={() => move(id)}>
+            <div className="item">
                 <div className="container">
-                    <p className="id">{id}</p>
-                    <p className="userId">{userId}</p>
-                    <p className="content">{content}</p>
-                    <div className="status">
-                        <DispatchBtn id={id} status={status}/>
+                    <div className="info" onClick={() => move(id)}>
+                        <p className="id">{id}</p>
+                        <p className="userId">{userId}</p>
+                        <p className="content">{content}</p>
+                        <p className="time"><Time value={time} format="YYYY/MM/DD hh:mm:ss" /></p>
                     </div>
-                    <p className="time"><Time value={time} format="YYYY/MM/DD" /></p>
+                    <div className="status">
+                        <DispatchBtn id={id} status={status} />
+                    </div>
                 </div>
             </div>
         );
