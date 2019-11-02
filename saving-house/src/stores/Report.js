@@ -39,6 +39,7 @@ export default class Report {
                     "token": token,
                 },
             });
+            console.log(result);
             this.setReportInfo(result.data);
         }catch(error) {
             console.log(error);
