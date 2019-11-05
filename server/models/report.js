@@ -43,7 +43,8 @@ module.exports = (sequelize, DataTypes) => {
         });
 
         Report.getData = () => sequelize.query(`
-            select date_format(createdAt,'%Y-%m-%d %T') as createdAt, content from reports;
+            select content, rescueState, date_format(createdAt,'%Y-%m-%d %T') as createdAt from reports
+            order by createdAt desc;
             `, {
                 type: sequelize.QueryTypes.SELECT,
                 raw: true,
